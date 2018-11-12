@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Slu-6s-jbX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="DYR-5f-RBg">
+            <objects>
+                <navigationController id="Slu-6s-jbX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sb0-lQ-9cS">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vUw-eb-3x1" kind="relationship" relationship="rootViewController" id="XCQ-bi-qgn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DyJ-wC-7Vi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1148" y="0.0"/>
+        </scene>
+        <!--名刺撮影-->
+        <scene sceneID="iCr-O6-nON">
+            <objects>
+                <viewController storyboardIdentifier="CardReaderViewController" id="vUw-eb-3x1" customClass="CardReaderViewController" customModule="VisionRectangleDetection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uQm-Uq-mHe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vAh-Mr-CeG">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCV-UR-COE">
+                                <rect key="frame" x="94" y="617" width="187.5" height="30"/>
+                                <state key="normal" title="Capture"/>
+                                <connections>
+                                    <action selector="capturePhoto:" destination="vUw-eb-3x1" eventType="touchUpInside" id="tMW-qJ-GK1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wCV-UR-COE" firstAttribute="width" secondItem="uQm-Uq-mHe" secondAttribute="width" multiplier="0.5" id="3j8-Te-P0X"/>
+                            <constraint firstItem="vAh-Mr-CeG" firstAttribute="top" secondItem="0mP-Y3-Q87" secondAttribute="top" id="Kt4-yZ-XRc"/>
+                            <constraint firstItem="0mP-Y3-Q87" firstAttribute="bottom" secondItem="wCV-UR-COE" secondAttribute="bottom" constant="20" id="ZZu-6M-NVc"/>
+                            <constraint firstItem="vAh-Mr-CeG" firstAttribute="leading" secondItem="0mP-Y3-Q87" secondAttribute="leading" id="eZ2-Df-uVO"/>
+                            <constraint firstItem="wCV-UR-COE" firstAttribute="centerX" secondItem="uQm-Uq-mHe" secondAttribute="centerX" id="i9P-v5-RDG"/>
+                            <constraint firstItem="vAh-Mr-CeG" firstAttribute="trailing" secondItem="0mP-Y3-Q87" secondAttribute="trailing" id="oy4-k9-9BV"/>
+                            <constraint firstItem="vAh-Mr-CeG" firstAttribute="bottom" secondItem="0mP-Y3-Q87" secondAttribute="bottom" id="xD5-yh-uo5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0mP-Y3-Q87"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="名刺撮影" id="teA-Oz-8ha"/>
+                    <connections>
+                        <outlet property="cameraButton" destination="wCV-UR-COE" id="Mha-qE-Gi9"/>
+                        <outlet property="imageView" destination="vAh-Mr-CeG" id="pi7-LA-HIV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edt-Vs-fIH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-362.39999999999998" y="-0.44977511244377816"/>
+        </scene>
+    </scenes>
+</document>

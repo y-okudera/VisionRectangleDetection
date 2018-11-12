@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64B21B9F21987AFE00A3A683 /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B21B9E21987AFE00A3A683 /* NSObject+ClassName.swift */; };
+		64B21BBB21987AFF00A3A683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64B21BBA21987AFF00A3A683 /* LaunchScreen.storyboard */; };
+		64B21BBE21987AFF00A3A683 /* ViewControllerInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B21BBD21987AFF00A3A683 /* ViewControllerInstantiatable.swift */; };
+		64B21BC621987AFF00A3A683 /* NibRegistrable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B21BC521987AFF00A3A683 /* NibRegistrable.swift */; };
+		64B21BC921987AFF00A3A683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B21BC821987AFF00A3A683 /* AppDelegate.swift */; };
+		64B21BCB21987B0100A3A683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B21BCA21987B0100A3A683 /* Assets.xcassets */; };
+		64B21BF72198831D00A3A683 /* CardReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B21BF62198831D00A3A683 /* CardReaderViewController.swift */; };
+		64B21BF92198832900A3A683 /* CardReaderViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64B21BF82198832900A3A683 /* CardReaderViewController.storyboard */; };
+		64DD74CA2199CB8F00F41A1E /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD74C92199CB8F00F41A1E /* CardViewController.swift */; };
+		64DD74CC2199CB9900F41A1E /* CardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64DD74CB2199CB9900F41A1E /* CardViewController.storyboard */; };
+		64DD74D02199CC2600F41A1E /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD74CE2199CC2600F41A1E /* CardCell.swift */; };
+		64DD74D12199CC2600F41A1E /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64DD74CF2199CC2600F41A1E /* CardCell.xib */; };
+		64DD74D42199E83800F41A1E /* RectanglesDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD74D32199E83800F41A1E /* RectanglesDrawer.swift */; };
+		64DD74D72199EAFB00F41A1E /* CGPoint+Scaled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD74D62199EAFB00F41A1E /* CGPoint+Scaled.swift */; };
+		64DD74DA2199EB2C00F41A1E /* UIImage+FromCIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD74D92199EB2C00F41A1E /* UIImage+FromCIImage.swift */; };
+		64DD74DC2199EB5200F41A1E /* UIImage+RotatedByDegrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD74DB2199EB5200F41A1E /* UIImage+RotatedByDegrees.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		64B21B9321987AFE00A3A683 /* VisionRectangleDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionRectangleDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64B21B9E21987AFE00A3A683 /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		64B21BAF21987AFF00A3A683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64B21BBA21987AFF00A3A683 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64B21BBD21987AFF00A3A683 /* ViewControllerInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInstantiatable.swift; sourceTree = "<group>"; };
+		64B21BC521987AFF00A3A683 /* NibRegistrable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibRegistrable.swift; sourceTree = "<group>"; };
+		64B21BC821987AFF00A3A683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		64B21BCA21987B0100A3A683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64B21BF62198831D00A3A683 /* CardReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReaderViewController.swift; sourceTree = "<group>"; };
+		64B21BF82198832900A3A683 /* CardReaderViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardReaderViewController.storyboard; sourceTree = "<group>"; };
+		64DD74C92199CB8F00F41A1E /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		64DD74CB2199CB9900F41A1E /* CardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardViewController.storyboard; sourceTree = "<group>"; };
+		64DD74CE2199CC2600F41A1E /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		64DD74CF2199CC2600F41A1E /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
+		64DD74D32199E83800F41A1E /* RectanglesDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectanglesDrawer.swift; sourceTree = "<group>"; };
+		64DD74D62199EAFB00F41A1E /* CGPoint+Scaled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Scaled.swift"; sourceTree = "<group>"; };
+		64DD74D92199EB2C00F41A1E /* UIImage+FromCIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+FromCIImage.swift"; sourceTree = "<group>"; };
+		64DD74DB2199EB5200F41A1E /* UIImage+RotatedByDegrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+RotatedByDegrees.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64B21B9021987AFE00A3A683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64B21B8A21987AFE00A3A683 = {
+			isa = PBXGroup;
+			children = (
+				64B21B9521987AFE00A3A683 /* VisionRectangleDetection */,
+				64B21B9421987AFE00A3A683 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64B21B9421987AFE00A3A683 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64B21B9321987AFE00A3A683 /* VisionRectangleDetection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64B21B9521987AFE00A3A683 /* VisionRectangleDetection */ = {
+			isa = PBXGroup;
+			children = (
+				64B21B9621987AFE00A3A683 /* Extensions */,
+				64B21BB521987AFF00A3A683 /* Models */,
+				64B21BB821987AFF00A3A683 /* Controllers */,
+				64B21BC321987AFF00A3A683 /* Views */,
+				64B21BC721987AFF00A3A683 /* Others */,
+			);
+			path = VisionRectangleDetection;
+			sourceTree = "<group>";
+		};
+		64B21B9621987AFE00A3A683 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				64DD74D82199EB1C00F41A1E /* UIKit */,
+				64DD74D52199EAE700F41A1E /* CoreGraphics */,
+				64B21B9721987AFE00A3A683 /* Foundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		64B21B9721987AFE00A3A683 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				64B21B9E21987AFE00A3A683 /* NSObject+ClassName.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		64B21BB521987AFF00A3A683 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				64DD74D22199E81C00F41A1E /* CardReader */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		64B21BB821987AFF00A3A683 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				64B21BBC21987AFF00A3A683 /* Protocol */,
+				64B21BB921987AFF00A3A683 /* LaunchScreen */,
+				64B21BF32198821900A3A683 /* CardReader */,
+				64DD74C82199CB7E00F41A1E /* Card */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		64B21BB921987AFF00A3A683 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				64B21BBA21987AFF00A3A683 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		64B21BBC21987AFF00A3A683 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				64B21BBD21987AFF00A3A683 /* ViewControllerInstantiatable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		64B21BC321987AFF00A3A683 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				64B21BC421987AFF00A3A683 /* Protocol */,
+				64DD74CD2199CC1000F41A1E /* Card */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		64B21BC421987AFF00A3A683 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				64B21BC521987AFF00A3A683 /* NibRegistrable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		64B21BC721987AFF00A3A683 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				64B21BC821987AFF00A3A683 /* AppDelegate.swift */,
+				64B21BCA21987B0100A3A683 /* Assets.xcassets */,
+				64B21BAF21987AFF00A3A683 /* Info.plist */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		64B21BF32198821900A3A683 /* CardReader */ = {
+			isa = PBXGroup;
+			children = (
+				64B21BF62198831D00A3A683 /* CardReaderViewController.swift */,
+				64B21BF82198832900A3A683 /* CardReaderViewController.storyboard */,
+			);
+			path = CardReader;
+			sourceTree = "<group>";
+		};
+		64DD74C82199CB7E00F41A1E /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				64DD74C92199CB8F00F41A1E /* CardViewController.swift */,
+				64DD74CB2199CB9900F41A1E /* CardViewController.storyboard */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		64DD74CD2199CC1000F41A1E /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				64DD74CE2199CC2600F41A1E /* CardCell.swift */,
+				64DD74CF2199CC2600F41A1E /* CardCell.xib */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		64DD74D22199E81C00F41A1E /* CardReader */ = {
+			isa = PBXGroup;
+			children = (
+				64DD74D32199E83800F41A1E /* RectanglesDrawer.swift */,
+			);
+			path = CardReader;
+			sourceTree = "<group>";
+		};
+		64DD74D52199EAE700F41A1E /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				64DD74D62199EAFB00F41A1E /* CGPoint+Scaled.swift */,
+			);
+			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		64DD74D82199EB1C00F41A1E /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				64DD74D92199EB2C00F41A1E /* UIImage+FromCIImage.swift */,
+				64DD74DB2199EB5200F41A1E /* UIImage+RotatedByDegrees.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64B21B9221987AFE00A3A683 /* VisionRectangleDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64B21BE421987B0100A3A683 /* Build configuration list for PBXNativeTarget "VisionRectangleDetection" */;
+			buildPhases = (
+				64B21B8F21987AFE00A3A683 /* Sources */,
+				64B21B9021987AFE00A3A683 /* Frameworks */,
+				64B21B9121987AFE00A3A683 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisionRectangleDetection;
+			productName = VisionRectangleDetection;
+			productReference = 64B21B9321987AFE00A3A683 /* VisionRectangleDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64B21B8B21987AFE00A3A683 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Yuki Okudera";
+				TargetAttributes = {
+					64B21B9221987AFE00A3A683 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 64B21B8E21987AFE00A3A683 /* Build configuration list for PBXProject "VisionRectangleDetection" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 64B21B8A21987AFE00A3A683;
+			productRefGroup = 64B21B9421987AFE00A3A683 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64B21B9221987AFE00A3A683 /* VisionRectangleDetection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64B21B9121987AFE00A3A683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B21BCB21987B0100A3A683 /* Assets.xcassets in Resources */,
+				64DD74CC2199CB9900F41A1E /* CardViewController.storyboard in Resources */,
+				64DD74D12199CC2600F41A1E /* CardCell.xib in Resources */,
+				64B21BBB21987AFF00A3A683 /* LaunchScreen.storyboard in Resources */,
+				64B21BF92198832900A3A683 /* CardReaderViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64B21B8F21987AFE00A3A683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B21B9F21987AFE00A3A683 /* NSObject+ClassName.swift in Sources */,
+				64DD74D72199EAFB00F41A1E /* CGPoint+Scaled.swift in Sources */,
+				64B21BC621987AFF00A3A683 /* NibRegistrable.swift in Sources */,
+				64DD74CA2199CB8F00F41A1E /* CardViewController.swift in Sources */,
+				64B21BF72198831D00A3A683 /* CardReaderViewController.swift in Sources */,
+				64B21BC921987AFF00A3A683 /* AppDelegate.swift in Sources */,
+				64DD74DC2199EB5200F41A1E /* UIImage+RotatedByDegrees.swift in Sources */,
+				64B21BBE21987AFF00A3A683 /* ViewControllerInstantiatable.swift in Sources */,
+				64DD74DA2199EB2C00F41A1E /* UIImage+FromCIImage.swift in Sources */,
+				64DD74D42199E83800F41A1E /* RectanglesDrawer.swift in Sources */,
+				64DD74D02199CC2600F41A1E /* CardCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		64B21BE221987B0100A3A683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		64B21BE321987B0100A3A683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64B21BE521987B0100A3A683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8PR34D6DP;
+				INFOPLIST_FILE = "$(SRCROOT)/VisionRectangleDetection/Others/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.yuoku.VisionRectangleDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64B21BE621987B0100A3A683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8PR34D6DP;
+				INFOPLIST_FILE = "$(SRCROOT)/VisionRectangleDetection/Others/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.yuoku.VisionRectangleDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64B21B8E21987AFE00A3A683 /* Build configuration list for PBXProject "VisionRectangleDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64B21BE221987B0100A3A683 /* Debug */,
+				64B21BE321987B0100A3A683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64B21BE421987B0100A3A683 /* Build configuration list for PBXNativeTarget "VisionRectangleDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64B21BE521987B0100A3A683 /* Debug */,
+				64B21BE621987B0100A3A683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64B21B8B21987AFE00A3A683 /* Project object */;
+}
