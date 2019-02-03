@@ -9,22 +9,22 @@
 import UIKit
 import Vision
 
-struct RectanglesDrawer {
+struct CirclesDrawer {
     
-    // Rectangles are Red.
+    // Draw circles.
     static func draw(rectangles: [VNRectangleObservation],
                      onImageView imageView: UIImageView,
                      color: UIColor = #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)) {
+        if rectangles.isEmpty {
+            return
+        }
         CATransaction.begin()
         rectangles.forEach {
-            let rectBox = boundingBox(
-                forRegionOfInterest: $0.boundingBox,
-                withinImageBounds: imageView.layer.bounds
-            )
-            let rectLayer = shapeLayer(color: color, frame: rectBox)
+            let rectBox = boundingBox(forRegionOfInterest: $0.boundingBox, withinImageBounds: imageView.layer.bounds)
+            let circleLayer = shapeLayer(color: color, frame: rectBox)
             
             // Add to pathLayer on top of image.
-            imageView.layer.addSublayer(rectLayer)
+            imageView.layer.addSublayer(circleLayer)
         }
         CATransaction.commit()
     }
@@ -46,6 +46,16 @@ struct RectanglesDrawer {
         rect.size.width *= imageWidth
         rect.size.height *= imageHeight
         
+        // Change the size to make it square.
+        let diff = abs(rect.size.height - rect.size.width)
+        if rect.size.width > rect.size.height {
+            rect.size.height = rect.size.width
+            rect.origin.y = rect.origin.y + (diff / 2)
+        } else {
+            rect.size.width = rect.size.height
+            rect.origin.x = rect.origin.x - (diff / 2)
+        }
+        
         return rect
     }
     
@@ -57,7 +67,7 @@ struct RectanglesDrawer {
         layer.fillColor = nil // No fill to show boxed object
         layer.shadowOpacity = 0
         layer.shadowRadius = 0
-        layer.borderWidth = 2
+        layer.borderWidth = 3.0
         
         // Vary the line color according to input.
         layer.borderColor = color.cgColor
@@ -67,9 +77,33 @@ struct RectanglesDrawer {
         layer.frame = frame
         layer.masksToBounds = true
         
+        // Corner radius
+        let cornerRadius = frame.width > frame.height ? frame.width / 2 : frame.height / 2
+        layer.cornerRadius = cornerRadius
+        
+        // Add CAAnimationGroup.
+        layer.add(contentsScaleAnimationGroup(toRect: layer.frame), forKey: "contentsScaleAnimationGroup")
+        
         // Transform the layer to have same coordinate system as the imageView underneath it.
         layer.transform = CATransform3DMakeScale(1, -1, 1)
-        
         return layer
+    }
+    
+    /// Animation
+    private static func contentsScaleAnimationGroup(toRect: CGRect) -> CAAnimationGroup {
+        
+        let scaleAnimation = CABasicAnimation(keyPath: "transform.scale")
+        scaleAnimation.duration = 10.0
+        scaleAnimation.toValue = 0.8
+        
+        let positionAnimation = CABasicAnimation(keyPath: "position")
+        positionAnimation.duration = 10.0
+        positionAnimation.toValue = NSValue(cgPoint: .init(x: toRect.width, y: toRect.height))
+        
+        let animationGroup = CAAnimationGroup()
+        animationGroup.animations = [scaleAnimation, positionAnimation]
+        animationGroup.repeatCount = .infinity
+        animationGroup.autoreverses = true
+        return animationGroup
     }
 }
